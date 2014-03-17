@@ -17,7 +17,7 @@ import java.io.File;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.swe4j.phantom.PhantomJPEGExporter;
+import org.swe4j.phantom.jpeg.PhantomJPEGExporter;
 
 import com.swe4j.ExportException;
 import com.swe4j.jpeg.Input4JPEG;

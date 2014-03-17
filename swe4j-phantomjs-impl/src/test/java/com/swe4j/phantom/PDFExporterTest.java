@@ -17,7 +17,7 @@ import java.io.File;
 import java.net.MalformedURLException;
 
 import org.junit.Test;
-import org.swe4j.phantom.PhantomPDFExporter;
+import org.swe4j.phantom.pdf.PhantomPDFExporter;
 
 import com.swe4j.ExportException;
 import com.swe4j.pdf.Input4PDF;

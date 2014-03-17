@@ -17,6 +17,8 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.swe4j.phantom.PhantomExporter;
+
 import com.swe4j.ExportException;
 import com.swe4j.pdf.Input4PDF;
 import com.swe4j.pdf.PDFExporter;

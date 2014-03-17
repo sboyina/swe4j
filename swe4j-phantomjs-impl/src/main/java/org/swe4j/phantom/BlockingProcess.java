@@ -70,7 +70,7 @@ public final class BlockingProcess {
 					new InputStreamReader(process.getInputStream()));
 			try {
 				while ((line = input.readLine()) != null) {
-					logger.log(level, "{} - {}", new Object[] { processName,
+					logger.log(level, "{0} - {1}", new Object[] { processName,
 							line });
 				}
 			} catch (Exception e) {
@@ -90,7 +90,7 @@ public final class BlockingProcess {
 				} catch (IllegalThreadStateException ie) {
 					logger.log(
 							Level.SEVERE,
-							"{} Process has not yet completed. So destroying it.",
+							"{0} Process has not yet completed. So destroying it.",
 							processName);
 					process.destroy();
 				}

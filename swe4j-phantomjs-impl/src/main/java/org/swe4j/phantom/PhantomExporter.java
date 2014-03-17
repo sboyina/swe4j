@@ -58,7 +58,7 @@ public abstract class PhantomExporter {
 	private int renderTime = 5000;
 	private String typeExtension = null;
 	private int zoomFactor = 1;
-	private int maxExportTimeAlowed = 30000;// 30 seconds
+	private int maxExportTimeAlowed = 300000;// 30 seconds
 
 	/**
 	 * @param typeExtension
