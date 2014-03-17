@@ -16,11 +16,10 @@ package org.swe4j.phantom.gif;
 import java.io.File;
 import java.util.HashMap;
 
+import org.swe4j.ExportException;
+import org.swe4j.gif.GIFExporter;
+import org.swe4j.gif.Input4GIF;
 import org.swe4j.phantom.BaseImageExporter;
-
-import com.swe4j.ExportException;
-import com.swe4j.gif.GIFExporter;
-import com.swe4j.gif.Input4GIF;
 
 /**
  * <p>

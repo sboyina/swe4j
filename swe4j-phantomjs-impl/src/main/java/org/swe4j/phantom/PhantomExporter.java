@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import com.swe4j.ExportException;
+import org.swe4j.ExportException;
 
 /**
  * <p>

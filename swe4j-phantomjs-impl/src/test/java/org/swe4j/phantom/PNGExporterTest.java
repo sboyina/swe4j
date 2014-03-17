@@ -11,16 +11,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.swe4j.phantom;
+package org.swe4j.phantom;
 
 import java.io.File;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.swe4j.ExportException;
 import org.swe4j.phantom.png.PhantomPNGExporter;
-
-import com.swe4j.ExportException;
-import com.swe4j.png.Input4PNG;
+import org.swe4j.png.Input4PNG;
 
 /**
  * @author sboyina

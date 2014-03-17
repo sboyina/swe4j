@@ -1,8 +1,8 @@
-package com.swe4j.pdf;
+package org.swe4j.pdf;
 
 import java.io.File;
 
-import com.swe4j.ExportException;
+import org.swe4j.ExportException;
 
 public interface PDFExporter {
 

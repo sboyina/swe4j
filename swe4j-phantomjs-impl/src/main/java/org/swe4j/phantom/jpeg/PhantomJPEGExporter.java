@@ -16,11 +16,10 @@ package org.swe4j.phantom.jpeg;
 import java.io.File;
 import java.util.HashMap;
 
+import org.swe4j.ExportException;
+import org.swe4j.jpeg.Input4JPEG;
+import org.swe4j.jpeg.JPEGExporter;
 import org.swe4j.phantom.BaseImageExporter;
-
-import com.swe4j.ExportException;
-import com.swe4j.jpeg.Input4JPEG;
-import com.swe4j.jpeg.JPEGExporter;
 
 /**
  * 

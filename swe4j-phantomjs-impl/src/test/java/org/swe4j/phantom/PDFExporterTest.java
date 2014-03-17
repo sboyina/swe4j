@@ -11,16 +11,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.swe4j.phantom;
+package org.swe4j.phantom;
 
 import java.io.File;
 import java.net.MalformedURLException;
 
 import org.junit.Test;
+import org.swe4j.ExportException;
+import org.swe4j.pdf.Input4PDF;
 import org.swe4j.phantom.pdf.PhantomPDFExporter;
-
-import com.swe4j.ExportException;
-import com.swe4j.pdf.Input4PDF;
 
 /**
  * Unit test for simple App.

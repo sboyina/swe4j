@@ -1,9 +1,9 @@
 /**
  * 
  */
-package com.swe4j.pdf;
+package org.swe4j.pdf;
 
-import com.swe4j.Input;
+import org.swe4j.Input;
 
 /**
  * @author srinivasab

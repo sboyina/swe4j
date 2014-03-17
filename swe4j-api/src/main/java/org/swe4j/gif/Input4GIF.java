@@ -1,9 +1,9 @@
 /**
  * 
  */
-package com.swe4j.gif;
+package org.swe4j.gif;
 
-import com.swe4j.Input4Image;
+import org.swe4j.Input4Image;
 
 /**
  * @author srinivasab

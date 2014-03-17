@@ -1,4 +1,4 @@
-package com.swe4j.jpeg;
+package org.swe4j.jpeg;
 
 public interface JPEGExporter {
 

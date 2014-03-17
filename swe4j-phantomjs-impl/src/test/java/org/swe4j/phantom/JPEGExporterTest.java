@@ -11,34 +11,34 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.swe4j.phantom;
+package org.swe4j.phantom;
 
 import java.io.File;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.swe4j.phantom.gif.PhantomGIFExporter;
-
-import com.swe4j.ExportException;
-import com.swe4j.gif.Input4GIF;
+import org.swe4j.ExportException;
+import org.swe4j.jpeg.Input4JPEG;
+import org.swe4j.phantom.jpeg.PhantomJPEGExporter;
 
 /**
  * @author sboyina
  * 
  */
-public class GIFExporterTest extends ExporterTestBase {
-	private PhantomGIFExporter gifExporter;
+public class JPEGExporterTest extends ExporterTestBase {
+
+	private PhantomJPEGExporter jpegExporter;
 
 	@Before
 	public void initialize() {
-		this.gifExporter = new PhantomGIFExporter();
+		this.jpegExporter = new PhantomJPEGExporter();
 	}
 
 	@Test
 	public void testFileExportAsJPEG() throws ExportException {
-		Input4GIF input = new Input4GIF();
+		Input4JPEG input = new Input4JPEG();
 		input.setFileToExport(getTestFile());
-		File outputFile = gifExporter.export(input);
+		File outputFile = jpegExporter.export(input);
 		assertExistence(outputFile);
 	}
 

@@ -1,8 +1,8 @@
-package com.swe4j.png;
+package org.swe4j.png;
 
 import java.io.File;
 
-import com.swe4j.ExportException;
+import org.swe4j.ExportException;
 
 public interface PNGExporter {
 

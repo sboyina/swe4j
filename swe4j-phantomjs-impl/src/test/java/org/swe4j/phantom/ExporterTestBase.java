@@ -1,4 +1,4 @@
-package com.swe4j.phantom;
+package org.swe4j.phantom;
 
 import java.io.File;
 import java.io.IOException;

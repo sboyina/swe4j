@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.swe4j;
+package org.swe4j;
 
 
 /**
