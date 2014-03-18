@@ -1,8 +1,10 @@
 package org.swe4j.phantom;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.logging.LogManager;
 
 import org.junit.Assert;
 import org.junit.runner.RunWith;
@@ -19,6 +21,9 @@ public class ExporterTestBase {
 			System.setProperty("webexporter.phantomjs.path",
 					getResourcePath(properties
 							.getProperty("phantomjs.exe.path")));
+			LogManager.getLogManager().readConfiguration(
+					new FileInputStream(
+							getResourcePath("classpath:logging.properties")));
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
