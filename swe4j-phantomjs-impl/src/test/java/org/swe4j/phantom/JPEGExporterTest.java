@@ -17,9 +17,10 @@ import java.io.File;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.swe4j.ExportException;
-import org.swe4j.jpeg.Input4JPEG;
-import org.swe4j.phantom.jpeg.PhantomJPEGExporter;
+
+import com.strategicbase.swe4j.ExportException;
+import com.strategicbase.swe4j.jpeg.Input4JPEG;
+import com.strategicbase.swe4j.phantom.jpeg.PhantomJPEGExporter;
 
 /**
  * @author sboyina

@@ -17,9 +17,10 @@ import java.io.File;
 import java.net.MalformedURLException;
 
 import org.junit.Test;
-import org.swe4j.ExportException;
-import org.swe4j.pdf.Input4PDF;
-import org.swe4j.phantom.pdf.PhantomPDFExporter;
+
+import com.strategicbase.swe4j.ExportException;
+import com.strategicbase.swe4j.pdf.Input4PDF;
+import com.strategicbase.swe4j.phantom.pdf.PhantomPDFExporter;
 
 /**
  * Unit test for simple App.

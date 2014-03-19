@@ -11,34 +11,41 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.swe4j.phantom;
+package com.strategicbase.swe4j.phantom.png;
 
 import java.io.File;
-
-import org.junit.Before;
-import org.junit.Test;
+import java.util.HashMap;
 
 import com.strategicbase.swe4j.ExportException;
-import com.strategicbase.swe4j.phantom.png.PhantomPNGExporter;
+import com.strategicbase.swe4j.phantom.BaseImageExporter;
 import com.strategicbase.swe4j.png.Input4PNG;
+import com.strategicbase.swe4j.png.PNGExporter;
 
 /**
+ * <p>
+ * {@link PhantomPNGExporter} exports a HTML to PNG format.
+ * </p>
+ * 
  * @author sboyina
  * 
  */
-public class PNGExporterTest extends ExporterTestBase {
-	private PhantomPNGExporter pngExporter;
+public class PhantomPNGExporter extends BaseImageExporter implements
+		PNGExporter {
 
-	@Before
-	public void initialize() {
-		this.pngExporter = new PhantomPNGExporter();
+	public PhantomPNGExporter() {
+		super("png");
 	}
 
-	@Test
-	public void testFileExportAsPNG() throws ExportException {
-		Input4PNG input = new Input4PNG();
-		input.setFileToExport(getTestFile());
-		File outputFile = pngExporter.export(input);
-		assertExistence(outputFile);
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * com.strategicbase.webexporter.phantom.PNGExporter#export(com.strategicbase
+	 * .webexporter.png.Input4PNG)
+	 */
+	public File export(Input4PNG input) throws ExportException {
+		return super.export(input.getUrlToExport(),
+				new HashMap<String, String>());
 	}
+
 }

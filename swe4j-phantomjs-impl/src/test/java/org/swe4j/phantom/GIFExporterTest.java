@@ -17,9 +17,10 @@ import java.io.File;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.swe4j.ExportException;
-import org.swe4j.gif.Input4GIF;
-import org.swe4j.phantom.gif.PhantomGIFExporter;
+
+import com.strategicbase.swe4j.ExportException;
+import com.strategicbase.swe4j.gif.Input4GIF;
+import com.strategicbase.swe4j.phantom.gif.PhantomGIFExporter;
 
 /**
  * @author sboyina

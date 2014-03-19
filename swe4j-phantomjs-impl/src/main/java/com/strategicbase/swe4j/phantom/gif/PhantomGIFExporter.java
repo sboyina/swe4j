@@ -11,34 +11,34 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.swe4j.phantom;
+package com.strategicbase.swe4j.phantom.gif;
 
 import java.io.File;
-
-import org.junit.Before;
-import org.junit.Test;
+import java.util.HashMap;
 
 import com.strategicbase.swe4j.ExportException;
-import com.strategicbase.swe4j.phantom.png.PhantomPNGExporter;
-import com.strategicbase.swe4j.png.Input4PNG;
+import com.strategicbase.swe4j.gif.GIFExporter;
+import com.strategicbase.swe4j.gif.Input4GIF;
+import com.strategicbase.swe4j.phantom.BaseImageExporter;
 
 /**
+ * <p>
+ * {@link PhantomGIFExporter} exports a html to gif format.
+ * </p>
+ * 
  * @author sboyina
  * 
  */
-public class PNGExporterTest extends ExporterTestBase {
-	private PhantomPNGExporter pngExporter;
+public class PhantomGIFExporter extends BaseImageExporter implements
+		GIFExporter {
 
-	@Before
-	public void initialize() {
-		this.pngExporter = new PhantomPNGExporter();
+	public PhantomGIFExporter() {
+		super("gif");
 	}
 
-	@Test
-	public void testFileExportAsPNG() throws ExportException {
-		Input4PNG input = new Input4PNG();
-		input.setFileToExport(getTestFile());
-		File outputFile = pngExporter.export(input);
-		assertExistence(outputFile);
+	public File export(Input4GIF input) throws ExportException {
+		return super.export(input.getUrlToExport(),
+				new HashMap<String, String>());
 	}
+
 }

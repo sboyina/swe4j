@@ -1,28 +1,48 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.swe4j</groupId>
+	<groupId>com.strategicbase.swe4j</groupId>
 	<artifactId>swe4j-phantomjs-impl</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
-
 	<name>swe4j-phantomjs-impl</name>
-	<url>http://maven.apache.org</url>
-
+	<url>http://swe4j.strategicbase.com</url>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<scm>
+		<connection>scm:git:https://github.com/sboyina/swe4j.git</connection>
+		<developerConnection>scm:git:https://github.com/sboyina/swe4j.git</developerConnection>
+		<url>https://github.com/sboyina/swe4j.git</url>
+	</scm>
+	<developers>
+		<developer>
+			<id>sboyina</id>
+		</developer>
+	</developers>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
 		<dependency>
+			<groupId>com.strategicbase.swe4j</groupId>
+			<artifactId>swe4j-api</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.11</version>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.swe4j</groupId>
-			<artifactId>swe4j-api</artifactId>
-			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 	<build>
